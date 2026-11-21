@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Conversation find",
+    "description": "Press Ctrl+F (Cmd+F on macOS) in a session to search the conversation transcript. Shows an Office-style find panel with all matches listed; every match is highlighted in place, and Previous, Next, or clicking a result jumps to it exactly. Desktop defaults to Ctrl+F / Cmd+F (Web uses Ctrl+Alt+F), Escape or ✕ closes the panel.",
+    "detail": "docs/DETAIL.md"
+  },
+  "find": {
+    "open": "Find in conversation",
+    "close": "Close find panel",
+    "placeholder": "Find in conversation",
+    "noSession": "Open a session to search its conversation",
+    "previous": "Previous match (Shift+Enter)",
+    "next": "Next match (Enter)",
+    "matchesOne": "1 match",
+    "matchesMany": "{count} matches",
+    "noMatches": "No matches",
+    "tooMany": "{count}+ matches",
+    "resultAria": "Go to match {index}",
+    "loading": "Loading…",
+    "caseSensitive": "Match case"
+  }
+}

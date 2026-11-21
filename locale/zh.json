@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "会话内容查找",
+    "description": "在会话中按 Ctrl+F（macOS 为 ⌘F）搜索会话内容：仿 Office 的查找面板列出全部匹配项，所有匹配在原文处高亮，点击上一处、下一处或某条结果会精确滚动并高亮到对应位置。桌面端默认 Ctrl+F / ⌘F（Web 端为 Ctrl+Alt+F），Esc 或 ✕ 关闭面板。",
+    "detail": "docs/DETAIL.md"
+  },
+  "find": {
+    "open": "查找会话内容",
+    "close": "关闭查找面板",
+    "placeholder": "查找会话内容",
+    "noSession": "打开一个会话后才能搜索",
+    "previous": "上一处（Shift+Enter）",
+    "next": "下一处（Enter）",
+    "matchesOne": "1 个匹配项",
+    "matchesMany": "{count} 个匹配项",
+    "noMatches": "无匹配项",
+    "tooMany": "超过 {count} 个匹配项",
+    "resultAria": "跳转到第 {index} 处",
+    "loading": "加载中…",
+    "caseSensitive": "区分大小写"
+  }
+}

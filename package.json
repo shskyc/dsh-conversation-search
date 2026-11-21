@@ -1,0 +1,30 @@
+{
+  "name": "dsh-plugin-conversation-find",
+  "version": "1.0.0",
+  "description": "Ctrl+F in-session search for the DSH conversation transcript with Office-style match list and in-place highlighting",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shskyc/dsh-plugin-conversation-find.git"
+  },
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "find", "search"],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md", "screenshots.json", "assets"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-shortcuts"
+      ]
+    }
+  }
+}
