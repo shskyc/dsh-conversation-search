@@ -1,12 +1,12 @@
 {
-  "name": "dsh-plugin-conversation-find",
+  "name": "dsh-conversation-search",
   "version": "1.0.0",
   "description": "Ctrl+F in-session search for the DSH conversation transcript with Office-style match list and in-place highlighting",
   "license": "MIT",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shskyc/dsh-plugin-conversation-find.git"
+    "url": "git+https://github.com/shskyc/dsh-conversation-search.git"
   },
   "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "find", "search"],
   "exports": {

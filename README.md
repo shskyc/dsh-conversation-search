@@ -1,4 +1,4 @@
-# dsh-plugin-conversation-find
+# dsh-conversation-search
 
 Press <kbd>Ctrl</kbd>+<kbd>F</kbd> in a DeepSeek Harness session to search the conversation transcript.
 An Office-style find panel lists every match with context; all matches are highlighted in the transcript,
@@ -27,7 +27,7 @@ and **Previous**, **Next**, or clicking a result jumps to that exact position an
 ## Install
 
 In DeepSeek Harness: **Plugins** → **Add plugin**, and install from this repository
-(`dsh plugin add shskyc/dsh-plugin-conversation-find` works from the CLI as well).
+(`dsh plugin add shskyc/dsh-conversation-search` works from the CLI as well).
 
 ## Shortcut
 

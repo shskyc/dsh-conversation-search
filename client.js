@@ -1,9 +1,9 @@
 window.__ModuleLoader__.load({
-  id: '@local/conversation-find',
+  id: 'dsh-conversation-search',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
-    const NS = 'conversation-find';
+    const NS = 'conversation-search';
 
     const dicts = {
       zh: { 'find.open': '查找会话内容', 'find.close': '关闭查找面板', 'find.placeholder': '查找会话内容', 'find.noSession': '当前没有打开的会话，打开一个会话后即可搜索', 'find.previous': '上一处（Shift+Enter）', 'find.next': '下一处（Enter）', 'find.matchesOne': '1 个匹配项', 'find.matchesMany': '{count} 个匹配项', 'find.noMatches': '无匹配项', 'find.tooMany': '超过 {count} 个匹配项', 'find.truncated': '仅显示前 {count} 条，可细化关键词', 'find.resultAria': '跳转到第 {index} 处', 'find.caseSensitive': '区分大小写', 'find.hintKeys': 'Enter 下一处 · Shift+Enter 上一处 · Esc 关闭' },
@@ -464,7 +464,7 @@ window.__ModuleLoader__.load({
       const shortcuts = ctx.shortcuts;
 
       if (locale && typeof locale.register === 'function') {
-        ctx.effect(() => locale.register(NS, dicts), 'conversation-find: dictionaries');
+        ctx.effect(() => locale.register(NS, dicts), 'conversation-search: dictionaries');
       }
       const t = locale && typeof locale.bind === 'function'
         ? locale.bind(NS)
@@ -479,10 +479,10 @@ window.__ModuleLoader__.load({
             stylesHandle = null;
           }
         };
-      }, 'conversation-find: styles');
+      }, 'conversation-search: styles');
 
       ctx.effect(() => slots.inject('shell.overlay', () => slots.register({
-        name: 'shell.overlay', id: 'conversation-find', locale: NS,
+        name: 'shell.overlay', id: 'conversation-search', locale: NS,
         label: () => t('find.open'),
         inject: () => ({ t: locale && locale.bind ? locale.bind(NS) : t }),
       }, (props) => {
@@ -498,7 +498,7 @@ window.__ModuleLoader__.load({
           onClose: closePanel,
           t: translate,
         });
-      })), 'conversation-find: overlay');
+      })), 'conversation-search: overlay');
 
       if (shortcuts && typeof shortcuts.register === 'function') {
         ctx.effect(() => shortcuts.register({
@@ -519,7 +519,7 @@ window.__ModuleLoader__.load({
           // Always open the panel; without a session the panel explains the
           // situation itself, so the gesture never feels dead.
           resolve: () => ({ status: 'handled', run: openPanel }),
-        }), 'conversation-find: command');
+        }), 'conversation-search: command');
       }
     }
 

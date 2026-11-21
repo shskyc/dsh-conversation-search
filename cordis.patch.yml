@@ -1,4 +1,4 @@
 - insert:
-    - id: conversation-find
-      name: '@local/conversation-find'
+    - id: conversation-search
+      name: dsh-conversation-search
       config: {}
